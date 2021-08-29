@@ -27,7 +27,7 @@
   }
 
   .slider {
-    height: 350px;
+    height: 60vh;
     display: flex;
     position: absolute;
     left: 0;
@@ -41,6 +41,7 @@
 
     .container {
       width: 100vw;
+      //height:100vw;
       display: flex;
       align-items: center;
       justify-content: center;

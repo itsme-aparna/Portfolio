@@ -61,9 +61,9 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <div classname="buttns"> 
-                  <button classname="buttn1" src={d.link1} alt="">Project Link</button>
-                  <button src = {d.link2} alt="">Github Link</button>
+                  <div classname="buttns" style={{}}> 
+                  <a href={data[0].link2}><button style={{margin:"10px"}} classname="buttn1" src={data[0].link1}  alt="">Project Link</button></a>
+                  <a href ={data[0].link1}><button style={{margin:"10px"}} src = {data[0].link2}   alt="">Github Link</button></a>
                   </div>
                 </div>
               </div>
