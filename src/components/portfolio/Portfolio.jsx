@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
+import FacebookIcon from '@material-ui/icons/Facebook';  
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Toolbar from '@material-ui/core/Toolbar';  
+import TwitterIcon from '@material-ui/icons/Twitter';  
+import LinkedInIcon from '@material-ui/icons/LinkedIn';  
+import MailIcon from '@material-ui/icons/Mail';  
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 import {
   featuredPortfolio,
   webPortfolio,
@@ -57,29 +65,29 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" id="about">
       <h1>About Me</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
-            <h3>{d.title}</h3>
-          </div>
-        ))}
+      <div className="links">
+      <div class="icon">
+        
+      {/* <FacebookIcon style={{ 'color': "crimson" }}/><br></br>  
+      <TwitterIcon style={{ 'color': "crimson" }}/> <br></br>  
+      <LinkedInIcon style={{ 'color': "crimson" }}/><br></br>  
+      <GitHubIcon style={{ 'color': "crimson" }}/><br></br>  
+      <InstagramIcon style={{ 'color': "crimson" }}/><br></br>   */}
+                                 
       </div>
-    </div>
+      </div>
+      <div className="aboutme"> 
+      
+      <div className="description">
+        <p>I'm a curious learner, having a knack for technology. Problem solving is a part of my everyday life. I am proficient in C++ and have basic syntax knowledge of Java and Python.
+
+          I am an aspiring web developer currently building projects using MERN tech stacks. I have also used Flask for API development. To gain some experience on Machine Learning I have built quite a few projects using Python and ML packages. 
+Currently exploring opportunities for entry level roles in the tech industry.</p>
+      </div>
+      </div>
+      
+      </div>
   );
 }

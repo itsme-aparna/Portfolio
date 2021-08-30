@@ -6,6 +6,8 @@
   flex-direction: column;
   align-items: center;
 
+
+
   h1 {
     font-size: 70px;
 
@@ -13,6 +15,46 @@
       font-size: 20px;
     }
   }
+
+  .links{
+    display:flex;
+    flex-direction: column;
+
+    .icons{
+      display:flex;
+      flex-direction: column;
+    }
+  }
+  .aboutme{
+    
+    width: 700px;
+      height: 70%;
+      border-radius: 10px;
+      padding: 10px;
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 1s ease;
+      
+
+    
+    
+    .description{
+      padding: 50px;
+      
+      background-color: #eeebf3;
+      font-size: 20px;
+      border-radius: 8%;
+    }
+
+    &:hover{
+      transform: scale(1.1);
+  }
+  }
+
+  
+  
 
   ul {
     margin: 10px;
