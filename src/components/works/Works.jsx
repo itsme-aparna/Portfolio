@@ -61,11 +61,6 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-<<<<<<< HEAD
-                  <div classname="buttns" style={{}}> 
-                  <a href={data[0].link2}><button style={{margin:"10px"}} classname="buttn1" src={data[0].link1}  alt="">Project Link</button></a>
-                  <a href ={data[0].link1}><button style={{margin:"10px"}} src = {data[0].link2}   alt="">Github Link</button></a>
-=======
                   <div classname="buttns"> 
                   <a href={d.link1}>
                   <button>Project Link</button>
@@ -73,7 +68,6 @@ export default function Works() {
                   <a href={d.link2}>
                   <button>Github Link</button>
                   </a>
->>>>>>> e9d7025c11bc0415bc188ae80120929ff7f2cb0f
                   </div>
                 </div>
               </div>
