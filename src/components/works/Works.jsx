@@ -12,8 +12,8 @@ export default function Works() {
         " A fullstack website built using ReactJs, NodeJs, flask API and MongoDB. Used Machine Learning in Python to process a dataset of disease symptoms and regression to detect the disease according to upto 6-inputs provided, also launched this API on Heroku.",
       img:
         "assets/doc.png",
-      link1: "https://github.com/itsme-aparna/Healthinic",
-      link2: "https://healthinic.netlify.app/",
+      link1: "https://healthinic.netlify.app/",
+      link2: "https://github.com/itsme-aparna/Healthinic",
     },
     {
       id: "2",
@@ -23,8 +23,8 @@ export default function Works() {
         "This project aimed at detecting Social Distancing Violation in Public Places using OpenCV, Detectron2 for detection and fast implementation to facilitate online surveillance during the Covid-19 pandemic",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-        link1: "https://github.com/itsme-aparna/Healthinic",
-        link2: "https://healthinic.netlify.app/",
+        link1: "https://colab.research.google.com/drive/1xVzddeDUPoEkaiK8ttfnIhe6QlodLcC9?usp=sharing&authuser=0#scrollTo=9xu4DjsUrLlC",
+        link2: "https://github.com/itsme-aparna/Social-Distancing-Tracker",
     },
     {
       id: "3",
@@ -34,8 +34,8 @@ export default function Works() {
         "Designed a front-end web application for the annual expo, using ReactJS, Particle.JS and various other frontend packages",
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-        link1: "https://github.com/itsme-aparna/Healthinic",
-      link2: "https://healthinic.netlify.app/",
+        link1: "https://aanvik.tecvit.in/",
+      link2: "https://aanvik.tecvit.in/",
     },
   ];
 
@@ -61,9 +61,19 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
+<<<<<<< HEAD
                   <div classname="buttns" style={{}}> 
                   <a href={data[0].link2}><button style={{margin:"10px"}} classname="buttn1" src={data[0].link1}  alt="">Project Link</button></a>
                   <a href ={data[0].link1}><button style={{margin:"10px"}} src = {data[0].link2}   alt="">Github Link</button></a>
+=======
+                  <div classname="buttns"> 
+                  <a href={d.link1}>
+                  <button>Project Link</button>
+                  </a>
+                  <a href={d.link2}>
+                  <button>Github Link</button>
+                  </a>
+>>>>>>> e9d7025c11bc0415bc188ae80120929ff7f2cb0f
                   </div>
                 </div>
               </div>
